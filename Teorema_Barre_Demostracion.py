@@ -70,8 +70,8 @@ M12 = Ra*(a+a_distancia_carga_cercana_dos)-m_cargas
 #else:
 print("Momentos cuando la resultante equidista de la carga P",i-1,"=",p[i-1],"kN la cual está ubicada a ",a-a_distancia_carga_cercana_uno,"m del apoyo izquierdo y a la izquierda de la resultante")
 
-print("El momento para un corte en la carga P",i-1,"=",p[i-1],"kN es ",M11,"kN-m")    
-print("El momento para un corte en la carga P",i,"=",p[i],"kN es ",M12, "kN-m")
+print("El momento para un corte en la carga P",i-1,"=",p[i-1],"kN es ",M12,"kN-m")    
+print("El momento para un corte en la carga P",i,"=",p[i],"kN es ",M11, "kN-m")
 
 #------------------
 print("");print("Además");print("")
@@ -107,8 +107,8 @@ M12 = Ra*(a-a_distancia_carga_cercana_uno)-m_cargas
 #else:
 print("Momentos cuando la resultante equidista de la carga P",i,"=",p[i],"kN la cual está ubicada a ",a+a_distancia_carga_cercana_dos,"m del apoyo izquierdo y a la derecha de la resultante")
 
-print("El momento para un corte en la carga P",i-1,"=",p[i-1],"kN es ",M11,"kN-m")    
-print("El momento para un corte en la carga P",i,"=",p[i],"kN es ",M12, "kN-m")    
+print("El momento para un corte en la carga P",i-1,"=",p[i-1],"kN es ",M12,"kN-m")    
+print("El momento para un corte en la carga P",i,"=",p[i],"kN es ",M11, "kN-m")    
     
     
     
