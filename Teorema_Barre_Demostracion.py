@@ -58,7 +58,7 @@ M11 = Ra*(a-a_distancia_carga_cercana_uno)-m_cargas
 #M1-2  
 m_cargas = 0
 d_acargai = 0
-for z in range(i, -1, -1):
+for z in range(i-1, -1, -1): # i por i-1 actualizacion porque se sali del index para dos cargas
     d_acargai = d_acargai+(x[z+1]-x[z])
     if z==i:d_acargai=0
     m_cargas = m_cargas+(p[z]*(d_acargai))
@@ -86,7 +86,7 @@ Rb = resultante*a/l #Resultanrte apoyo
 #M1-1 Se espera que este sea mayor 
 m_cargas = 0
 d_acargai = 0
-for z in range(i, -1, -1):
+for z in range(i-1, -1, -1):   # i por i-1 actualizacion porque se sali del index para dos cargas
     d_acargai = d_acargai+(x[z+1]-x[z])
     if z==i:d_acargai=0
     m_cargas = m_cargas+(p[z]*(d_acargai))
